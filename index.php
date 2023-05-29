@@ -12,8 +12,6 @@
         'gatto' => new Categorie('gatto', 'fa-solid fa-cat')
     ];
 
-    //var_dump( $category );
-
     $prodotti = [
         new Cibo('https://cdn.royalcanin-weshare-online.io/v2k6a2QBG95Xk-RBN9oV/v196/packshot-mini-ad-shn17', 'Royal Canin', 43.99, $category['cane'], 545, 'prosciutto, riso'),
 
@@ -51,7 +49,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- CSS LINK-->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -61,7 +59,7 @@
         <h2>I nostri prodotti</h2>
         <div class="row">
             <?php
-            // Ciclo per scorrere l'array dei prodotti
+    
             foreach ($prodotti as $element) {
                 // Prodotto che appartiene alla categoria 'cane'
                 if ($element->category->nome == 'cane') {
